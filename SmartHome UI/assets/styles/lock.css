@@ -1,0 +1,29 @@
+/* HIDE RADIO */
+input[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+input[type=radio] + i {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  opacity: .3;
+  font-size: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 5px;
+}
+
+/* CHECKED STYLES */
+#unlock:checked + i {
+  color: red;
+  opacity: 1;
+}
+
+#lock:checked + i {
+  color: rgb(21, 230, 143);
+  opacity: 1;
+}
